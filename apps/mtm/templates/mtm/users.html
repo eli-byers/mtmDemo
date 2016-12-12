@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>index</title>
+  </head>
+  <body>
+    <h1>Users</h1>
+    {% for user in users %}
+      <p>{{user.name|title}} <a href='/show/{{user.id}}'>Show</a></p>
+    {% endfor %}
+
+    <a href="/">Add</a>
+
+  </body>
+</html>

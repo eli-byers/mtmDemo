@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Show</title>
+  </head>
+  <body>
+    <h1>Show</h1>
+    {{user.name|title}}
+
+    <h1>Interest</h1>
+    {% for int in user.interests.all %}
+      <p>{{int.name|title}}</p>
+    {% endfor %}
+  </body>
+</html>
